@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ECECEA"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/Reserv_CRUD_IdReser"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="17dp"
+        android:layout_marginBottom="10dp"
+        android:text="Ajouter Facture"
+        android:textColor="#263238"
+        android:textSize="25dp"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/textView02"
+            android:layout_width="90dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_weight="0"
+            android:text="Description: "
+            android:textColor="#192125"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/Add_bill_Desc"
+            android:layout_width="145dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="20dp"
+            android:layout_weight="0"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:text="Name"
+            android:textColor="#192125" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/textView03"
+            android:layout_width="90dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_weight="0"
+            android:text="Montant: "
+            android:textColor="#192125"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/Add_bill_Price"
+            android:layout_width="145dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="20dp"
+            android:layout_weight="0"
+            android:ems="10"
+            android:inputType="date"
+            android:textColor="#192125" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="90dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_weight="0"
+            android:text="Etat: "
+            android:textColor="#192125"
+            android:textSize="16sp" />
+
+        <Spinner
+            android:id="@+id/Add_bill_State"
+            android:layout_width="145dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="20dp"
+            android:layout_weight="0"
+            android:ems="10"
+            android:inputType="date"
+            android:textColor="#192125" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="25dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/Add_bill_btnAjt"
+            android:layout_width="110dp"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="5dp"
+            android:backgroundTint="#CC263238"
+            android:text="Ajouter"
+            app:cornerRadius="15dp" />
+
+        <Button
+            android:id="@+id/Add_bill_btnCancel"
+            android:layout_width="110dp"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="5dp"
+            android:backgroundTint="#FDFDFD"
+            android:text="Cancel"
+            android:textColor="#263238"
+
+            app:cornerRadius="15dp" />
+    </LinearLayout>
+</LinearLayout>

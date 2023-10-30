@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient_background"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    tools:context=".Controllers.Login_Activity">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="250dp"
+        android:layout_height="220dp"
+        android:layout_marginTop="30dp"
+        android:layout_weight="0"
+        app:srcCompat="@drawable/mobile_login" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="130dp"
+        android:layout_marginBottom="5dp"
+        android:layout_weight="0"
+        android:shadowColor="#B5B2B2"
+        android:shadowDx="0"
+        android:shadowDy="10"
+        android:shadowRadius="7"
+        android:text="ID : "
+        android:textAllCaps="false"
+        android:textColor="#192125"
+        android:textSize="21dp" />
+
+    <EditText
+        android:id="@+id/login_txt_id"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_weight="0"
+        android:background="@drawable/edittext_bg"
+        android:defaultFocusHighlightEnabled="false"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:maxLength="20"
+        android:paddingStart="25dp"
+        android:selectAllOnFocus="false"
+        android:singleLine="true"
+        android:textColor="#B3263238" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="7dp"
+        android:layout_marginEnd="117dp"
+        android:layout_marginBottom="5dp"
+        android:shadowColor="#B5B2B2"
+        android:shadowDx="0"
+        android:shadowDy="10"
+        android:shadowRadius="7"
+        android:text="Pass : "
+        android:textAllCaps="false"
+        android:textColor="#192125"
+        android:textSize="21dp" />
+
+    <EditText
+        android:id="@+id/login_txt_pass"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_weight="0"
+        android:background="@drawable/edittext_bg"
+        android:defaultFocusHighlightEnabled="false"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:maxLength="20"
+        android:paddingStart="25dp"
+        android:selectAllOnFocus="false"
+        android:singleLine="true"
+        android:textColor="#B3263238" />
+
+    <Button
+        android:id="@+id/login_btn_log"
+        android:layout_width="170dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="50dp"
+        android:layout_weight="0"
+        android:backgroundTint="#263238"
+        android:text="Login"
+        android:textColor="#FDFDFD"
+        android:textSize="18dp" />
+
+</LinearLayout>

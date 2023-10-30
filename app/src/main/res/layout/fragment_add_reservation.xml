@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/Reserv"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Views.Fragments.Add_reservation_fragment">
+
+    <!-- Client info-->
+
+
+    <LinearLayout
+        android:id="@+id/linear_Client"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textView10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_marginBottom="10dp"
+            android:text="Entrer les information de client:  "
+            android:textColor="#192125"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textView21"
+                android:layout_width="110dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:text="Nom: "
+                android:textColor="#192125"
+                android:textSize="18sp" />
+
+            <EditText
+                android:id="@+id/Add_client_nom1"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:textColor="#192125" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="30dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textView31"
+                android:layout_width="110dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:text="Ville: "
+                android:textColor="#192125"
+                android:textSize="18sp" />
+
+            <EditText
+                android:id="@+id/Add_client_ville1"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+    <!-- Reservation info-->
+    <TextView
+        android:id="@+id/textView0"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginBottom="10dp"
+        android:text="Entrer les information de la reservation:  "
+        android:textColor="#192125"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="110dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:text="Date Debut:  "
+            android:textColor="#192125"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/Add_reservation_start"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="date"
+            android:textColor="#192125" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="110dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:text="Date Fin: "
+            android:textColor="#192125"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/Add_reservation_end"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="date"
+            android:textColor="#192125" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linear_SpClt"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingVertical="10dp">
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="110dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:text="Client: "
+            android:textColor="#192125"
+            android:textSize="18sp" />
+
+        <Spinner
+            android:id="@+id/Add_reservation_spClt"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingVertical="10dp">
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="110dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:text="Chambre: "
+            android:textColor="#192125"
+            android:textSize="18sp" />
+
+        <Spinner
+            android:id="@+id/Add_reservation_spRoom"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/Add_reservation_btnReserver"
+            android:layout_width="200dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="25dp"
+            android:text="Reserver"
+            app:cornerRadius="15dp" />
+    </LinearLayout>
+</LinearLayout>
